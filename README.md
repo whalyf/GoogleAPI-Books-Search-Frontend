@@ -24,6 +24,8 @@
 <h2>Projeto</h2>
 <p>O <strong> Google Book Search </strong> foi desenvolvido utilizando a API do google para efetuar as buscas. Neste sistema também há a possibilidade de favoritar os livros de sua preferência.</p>
 
+<h4>Para executar o projeto primeiro use 'yarn install' // 'npm install' em seguida, para executar o projeto use 'yarn start'// 'npm start'</h4>
+
 <h3 align="center">Search</h3>
 <img src="/gitImages/BookSearch.png" style="max-width:100%;" alt="Search">
 
