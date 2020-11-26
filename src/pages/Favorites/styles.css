@@ -1,0 +1,70 @@
+.all-page .header-content h3{
+    display: none;
+}
+
+.all-page .favorite-title{
+    display: flex;
+    width: 100%;
+    max-width: 1140px;  
+    text-transform: uppercase;
+    font-family: Anton;
+    color: #c2801e;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;
+}
+.all-page .favorite-title h2{
+    margin: auto;
+}
+
+
+.favorite-list .all-books{
+    max-width: 1140px;  
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.favorite-list .all-books{
+    margin-bottom: 20px;
+}
+
+ .favorite-list .button-container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.favorite-list .button-container button{
+    background: #c21e1e;      
+    color: #fff;  
+}
+
+
+@media (max-width: 690px){
+
+    .all-page .favorite-title{
+        margin-top: 70px;
+    }
+
+    .favorite-list .all-books{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 460px){
+    .favorite-list .all-books{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 310px){
+    .all-page .favorite-title{
+        font-size: 15px;
+    }
+}
