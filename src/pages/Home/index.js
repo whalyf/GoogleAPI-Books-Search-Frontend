@@ -95,40 +95,32 @@ export default function Home(){
                     </button>
                 </div>
             </section>
-
             <main>
                 {!informations ?(
                     <>
                         <div className="book-content">
-                            {bookItems !== [] ? (
-                                <>
-                                    {bookItems.map(selectedBook => (
-                                        <div className="each-book" key={selectedBook.id} >
-                                            <div className="item">
-                                                <img src={selectedBook.volumeInfo.imageLinks === undefined ? placeholder : selectedBook.volumeInfo.imageLinks.thumbnail} alt={selectedBook.volumeInfo.title}/>
-                                                <strong>{selectedBook.volumeInfo.title}</strong>
-                                                <span>{selectedBook.volumeInfo.authors}</span> 
-                                            </div>
-                                            <div className="button-container">
-                                                <button className="button" onClick={() => handleFavorites(selectedBook)}>
-                                                    {!!localStorage.getItem('@google-book-search/books') && localStorage.getItem('@google-book-search/books').indexOf(selectedBook.id) !== -1?
-                                                        <AiFillStar size={20} color="#FFF" /> 
-                                                    :
-                                                        <FiStar size={20} color="#FFF" /> 
-                                                    }
-                                                    Fav
-                                                </button>
-                                                <button className="button" onClick={() => handleMoreInfos(selectedBook)}>
-                                                    <FiPlusCircle size={20} color="#FFF"/> More
-                                                </button>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </>
-                            ) : ( 
-                                 <h3>Book not found</h3> 
-                                ) 
-                            }  
+                            {bookItems.map(selectedBook => (
+                                <div className="each-book" key={selectedBook.id} >
+                                    <div className="item">
+                                        <img src={selectedBook.volumeInfo.imageLinks === undefined ? placeholder : selectedBook.volumeInfo.imageLinks.thumbnail} alt={selectedBook.volumeInfo.title}/>
+                                        <strong>{selectedBook.volumeInfo.title}</strong>
+                                        <span>{selectedBook.volumeInfo.authors}</span> 
+                                    </div>
+                                    <div className="button-container">
+                                        <button className="button" onClick={() => handleFavorites(selectedBook)}>
+                                            {!!localStorage.getItem('@google-book-search/books') && localStorage.getItem('@google-book-search/books').indexOf(selectedBook.id) !== -1?
+                                                <AiFillStar size={20} color="#FFF" /> 
+                                            :
+                                                <FiStar size={20} color="#FFF" /> 
+                                            }
+                                            Fav
+                                        </button>
+                                        <button className="button" onClick={() => handleMoreInfos(selectedBook)}>
+                                            <FiPlusCircle size={20} color="#FFF"/> More
+                                        </button>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                         <ReactPaginate
                             containerClassName={'pagination'}
@@ -160,7 +152,6 @@ export default function Home(){
                         {!!book.saleInfo.listPrice && <p><strong>Price:</strong> R$ {book.saleInfo.listPrice.amount}</p>} 
                         {!!book.volumeInfo.previewLink &&<p><strong>Link:</strong> <a rel="noreferrer" target="_blank" href={book.volumeInfo.previewLink}>Open a preview</a></p>}
                         {!!book.volumeInfo.infoLink &&<p><strong>Informations:</strong> <a target="_blank" rel="noreferrer" href={book.volumeInfo.infoLink}>See it on google market</a></p>}
-
                         <button className="button" onClick={() => setInformations(false)}>
                             <FiXCircle size={22} color="#FFF"/>Back
                         </button>
