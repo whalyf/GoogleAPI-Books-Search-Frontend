@@ -1,17 +1,14 @@
-import React from "react"
-import {useHistory} from 'react-router-dom'
+import React from "react";
+import {useHistory} from 'react-router-dom';
 
-
-import './styles.css'
-
-import logo from '../assets/logo.png'
-
+import './styles.css';
+import logo from '../assets/logo.png';
 
 export default function Header(){
-    const history = useHistory()
+    const history = useHistory();
 
     function handleFavorites(){
-        history.push('/favorites')
+        history.push('/favorites');
     }
 
     return(
@@ -26,7 +23,6 @@ export default function Header(){
                     <button onClick={()=>handleFavorites()} className="button">Favorites</button>
                 </div>
             </div>
-
         </div>
     )
 }

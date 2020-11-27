@@ -60,7 +60,6 @@
     text-transform: uppercase;
 }
 
-
 @media (max-width: 690px){
     .header{
         flex-direction: column;

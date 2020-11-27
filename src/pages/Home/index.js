@@ -7,7 +7,7 @@ import { AiFillStar} from 'react-icons/ai';
 import './styles.css';
 import '../../global.css';
 import placeholder from '../../assets/placeholder.jpg';
-import Header from '../../components/Header/Header'
+import Header from '../../components/Header/Header';
 
 export default function Home(){
     const [informations, setInformations] = useState(false);
@@ -31,11 +31,10 @@ export default function Home(){
             if (response.data.items.length > 0) {
                 setBookItems(response.data.items);
             }else{
-                setBookItems([])
+                setBookItems([]);
             }
             setInformations(false);   
-
-          })
+            })
         } catch (err) {
             console.error('Home.handleSearch', err);
         }
@@ -66,7 +65,7 @@ export default function Home(){
                 );
             }
         }
-        setRefresh(!refresh)
+        setRefresh(!refresh);
     }
 
     function changePage(page){
