@@ -1,7 +1,9 @@
 <div align="center">
-    <a href="https://google-api-books-search-frontend.vercel.app/"> 
-    <img src="/gitImages/PageLogo.png" alt="logo">
-    </a>
+    <h1>
+        <a href="https://google-api-books-search-frontend.vercel.app/"> 
+        <img src="/gitImages/PageLogo.png" alt="logo">
+        </a>
+    </h1>
     <a href="/LICENSE">
         <img src="/gitImages/mit.svg" alt="LICENSE_MIT">
     </a>
