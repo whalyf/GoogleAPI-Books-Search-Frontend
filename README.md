@@ -1,6 +1,6 @@
 <div align="center">
     <h1>
-        <a href="https://google-api-books-search-frontend.vercel.app/"> 
+        <a target="_blank" href="https://google-api-books-search-frontend.vercel.app/"> 
         <img src="/gitImages/PageLogo.png" alt="logo">
         </a>
     </h1>
@@ -24,7 +24,7 @@
 </ul>
 
 <h2>Projeto</h2>
-<p>O <a href="https://google-api-books-search-frontend.vercel.app/"><strong> Google Book Search </strong><a/> foi desenvolvido utilizando a API do google para efetuar as buscas. Neste sistema também há a possibilidade de favoritar os livros de sua preferência.</p>
+<p>O <a target="_blank" href="https://google-api-books-search-frontend.vercel.app/"><strong> Google Book Search </strong><a/> foi desenvolvido utilizando a API do google para efetuar as buscas. Neste sistema também há a possibilidade de favoritar os livros de sua preferência.</p>
 
 
 <p>Para instalar as dependências necessárias do projeto primeiro use (yarn install ou npm install) em seguida, para executar o projeto use (yarn start ou npm start)</p>
